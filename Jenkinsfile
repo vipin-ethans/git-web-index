@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/ vipin-ethans/git-web-index.git'
+                git branch: 'master', url: 'https://github.com/vipin-ethans/git-web-index.git'
             }
         }
 
