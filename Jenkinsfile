@@ -12,8 +12,8 @@ pipeline {
             steps {
                 sshagent (credentials: ['web-server-ssh-key']) {
                     sh '''
-                        scp -o StrictHostKeyChecking=no index.html ec2-user@13.233.223.119:/tmp/
-                        ssh -o StrictHostKeyChecking=no ec2-user@13.233.223.119 'sudo mv /tmp/index.html /var/www/html/'
+                        scp -o StrictHostKeyChecking=no index.html ec2-user@13.233.84.4:/tmp/
+                        ssh -o StrictHostKeyChecking=no ec2-user@13.233.84.4 'sudo mv /tmp/index.html /var/www/html/'
                         
                     '''
                 }
